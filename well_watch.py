@@ -20,9 +20,10 @@ def main():
     setup_network()
 
     inflow = FlowSensor(12, 0.24)
-    outflow = FlowSensor(13, 0.25)
-    well_relay = Relay(14)
-    tank_level = PressureLevel(15)
+    outflow = FlowSensor(39, 0.25)
+    well_relay = Relay(33)
+    misc_relay = Relay(32)
+    tank_level = PressureLevel(3)
 
     led = Pin(2, Pin.OUT)
     enabled = False
